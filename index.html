@@ -1,9 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="author" content="iglaz" />
+
+	<title>Кнопки социальных сетей</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- вк мне нравится -->
+<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 2752883, onlyWidgets: true});
+</script>
+<!-- вк мне нравится -->
+</head>
+
+<body>
+<!-- fuckin facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- fuckin facebook -->
+    <div class="h1">
+        <h1>Кнопки социальных сетей как на <a href="http://glazdik.ru">glazdik.ru</a>
+        </h1>
+    </div>
 <!-- кнопочки -->
 					<noindex>
-					<div class="butts">
+					<div id="butts">
 									
 					<!-- vkontakte -->
-<div id="vk_like" style="clear:none !important; overflow:hidden; float:left; padding-bottom:10px;"></div>
+<div id="vk_like" class="left vk"></div>
 <script type="text/javascript">
 VK.Widgets.Like("vk_like", {type: "button", height: 24, width: 60});
 </script>
@@ -15,7 +47,7 @@ VK.Widgets.Like("vk_like", {type: "button", height: 24, width: 60});
                     
 					
                     <!-- google plus -->
-<div style="overflow:hidden; float:left;">
+<div class="left">
 <!-- Place this tag where you want the +1 button to render. -->
 <div class="g-plusone"></div>
 
@@ -35,7 +67,7 @@ VK.Widgets.Like("vk_like", {type: "button", height: 24, width: 60});
 					
 					
 					<!-- twitter -->
-<div <div style="overflow:hidden; float:left;">
+<div class="left">
 <a rel="nofollow" href="https://twitter.com/share" class="twitter-share-button" data-via="glazdikru" data-lang="ru" data-size="medium" data-related="glazdikru" data-hashtags="СтатьииновостиоWindows" data-dnt="true">Твитнуть</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
@@ -45,7 +77,7 @@ VK.Widgets.Like("vk_like", {type: "button", height: 24, width: 60});
 
                     <!-- facebook -->
 		 
-		 <div class="fb-like" style="overflow:hidden;float:left; margin-left:5px;" data-width="100" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+		 <div class="fb-like fb left" data-width="100" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
                     <!-- facebook -->
 					
 					</div>
@@ -54,6 +86,10 @@ VK.Widgets.Like("vk_like", {type: "button", height: 24, width: 60});
                    
 
 </noindex>
-                   <br>
-					<br>
+
 				<!-- кнопочки -->
+<div class="clear"></div>
+<hr>
+
+</body>
+</html>
